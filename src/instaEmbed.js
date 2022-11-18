@@ -1,5 +1,7 @@
 /* eslint-disable no-console */
 /* eslint-disable prettier/prettier */
+const instagramJsSDKUrl = '//www.instagram.com/static/bundles/metro/EmbedSDK.js/33cd2c5d5d59.js?fbclid=IwAR3RQTkNjiebq_1zyjskJSWGGQcHjoZQLPpbJyFyYhrQs0PJBe-ESeg-ZeY';
+
 export default {
   name: 'vue-instagram-embed',
   props: {
@@ -74,7 +76,7 @@ export default {
       const protocolToUse = 'https:';
       const s = document.createElement('script');
       s.async = s.defer = true;
-      s.src = `${protocolToUse}//platform.instagram.com/en_US/embeds.js`;
+      s.src = `${protocolToUse}//${instagramJsSDKUrl}`;
       s.id = 'vue-instagram-embed-script';
       const body = document.body;
       if (body) {
