@@ -2670,6 +2670,7 @@ var es6_number_constructor = __webpack_require__("c5f6");
 /* eslint-disable no-console */
 
 /* eslint-disable prettier/prettier */
+var instagramJsSDKUrl = '//www.instagram.com/static/bundles/metro/EmbedSDK.js/33cd2c5d5d59.js?fbclid=IwAR3RQTkNjiebq_1zyjskJSWGGQcHjoZQLPpbJyFyYhrQs0PJBe-ESeg-ZeY';
 /* harmony default export */ var instaEmbed = ({
   name: 'vue-instagram-embed',
   props: {
@@ -2748,7 +2749,7 @@ var es6_number_constructor = __webpack_require__("c5f6");
       var protocolToUse = 'https:';
       var s = document.createElement('script');
       s.async = s.defer = true;
-      s.src = "".concat(protocolToUse, "//platform.instagram.com/en_US/embeds.js");
+      s.src = "".concat(protocolToUse, "//").concat(instagramJsSDKUrl);
       s.id = 'vue-instagram-embed-script';
       var body = document.body;
 
